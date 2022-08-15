@@ -1,0 +1,8 @@
+#  Node Modules
+node_modules/
+
+#  list files
+lists.json
+
+# OUTPUT Files
+out/

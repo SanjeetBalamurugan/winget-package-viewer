@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winget Package Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+  </head>
+  <body>
+    <main>
+      <div id="info">
+        <h1>Winget Package Viewer</h1>
+        <p id="latest">Current Latest Version: 000000</p>
+      </div>
+      <div id="form">
+        <form action="index.html" enctype="multipart/form-data">
+          <input type="file" name="List Json" id="uploadList" accept=".json" />
+        </form>
+      </div>
+      <div id="output">
+        <div id="pakgUI">
+          <button class="accordion">Packages:</button>
+          <div class="panel">
+            <ul id="packages"></ul>
+          </div>
+        </div>
+        <div id="detailDiv"></div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
